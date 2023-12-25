@@ -1,0 +1,41 @@
+{
+  "name": "laravalidatejs",
+  "version": "1.0.7",
+  "description": "LaraValidateJS brings the robust and intuitive validation techniques of Laravel to JavaScript environments",
+  "main": "dist/index.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel      ./src -d dist --copy-files",
+    "eslintConfig": {
+      "extends": "react-app"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niteshkarmadhi/laraValidateJs.git"
+  },
+  "keywords": [
+    "validation",
+    "validate",
+    "validator-js"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/preset-react": "^7.23.3",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "yargs": "^17.7.2"
+  },
+  "author": "Nitesh Dobariya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niteshkarmadhi/laraValidateJs/issues"
+  },
+  "homepage": "https://github.com/niteshkarmadhi/laraValidateJs#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^16.8.6",
+    "validatorjs": "^3.22.1"
+  }
+}
