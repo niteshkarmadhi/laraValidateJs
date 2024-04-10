@@ -1,6 +1,6 @@
 {
   "name": "laravalidatejs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "LaraValidateJS brings the robust and intuitive validation techniques of Laravel to JavaScript environments",
   "main": "dist/index.js",
   "private": false,
