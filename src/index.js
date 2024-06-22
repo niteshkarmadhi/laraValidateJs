@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Validator from "validatorjs";
 import { validationMessages } from "./constant/validationMessages";
 
@@ -115,9 +115,9 @@ export default function Validators({
 }) {
   let _formData = {...formData}
   
-  const [submitted, setIsSubmitted] = useState(false);
+  const [submitted, setIsSubmitted] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (submitted) {
       let _isValidationFail = isValidationFail();
       if (false === _isValidationFail) {
@@ -126,9 +126,9 @@ export default function Validators({
     }
   }, [formData]);
 
-  const [errors, setErrors] = useState(null);
+  const [errors, setErrors] = React.useState(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (errorsData) {
       setErrors(errorsData);
     }
@@ -168,5 +168,5 @@ export default function Validators({
     return false;
   };
 
-  return <div>{children({ onSubmit, errors, resetValidation })}</div>;
+  return <div className="dd">{children({ onSubmit, errors, resetValidation })}</div>;
 }
